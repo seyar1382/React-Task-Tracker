@@ -16,16 +16,18 @@ function ChatInput({ setInputMessage, inputMessage, setTasks, tasks }) {
   }
 
   return (
-    <>
+    <div className="chat-input-container">
       <input
         value={inputMessage}
         onChange={storeMessage}
         type="text"
         placeholder="Enter a task"
         onKeyDown={checkEnter}
+        className="chat-input"
+        required
       />
       <button onClick={updateTasks}>Add</button>
-    </>
+    </div>
   );
 }
 

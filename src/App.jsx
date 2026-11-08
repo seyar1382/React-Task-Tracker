@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tasks from "./components/Tasks";
 import ChatInput from "./components/ChatInput";
+import "./App.css";
 
 function App() {
   const [inputMessage, setInputMessage] = useState("");
@@ -9,7 +10,7 @@ function App() {
   console.log(tasks);
 
   return (
-    <div>
+    <div className="App">
       <h1>Task Tracker</h1>
       <ChatInput
         inputMessage={inputMessage}

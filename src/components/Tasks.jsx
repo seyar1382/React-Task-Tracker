@@ -12,7 +12,7 @@ function Tasks({ tasks, setTasks }) {
   }
 
   return (
-    <div>
+    <>
       {tasks.map((task) => {
         return (
           <div className="tasks" key={task.id}>
@@ -20,13 +20,14 @@ function Tasks({ tasks, setTasks }) {
               type="checkbox"
               checked={task.completed}
               onChange={() => toggleInput(task.id)}
+              className="task-checkbox"
             />
             <span>{task.task}</span>
             <button onClick={() => deleteTask(task.id)}>Delete</button>
           </div>
         );
       })}
-    </div>
+    </>
   );
 }
 

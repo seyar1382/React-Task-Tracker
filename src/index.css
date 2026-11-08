@@ -22,13 +22,3 @@ body {
   flex-direction: column;
   box-sizing: border-box;
 }
-
-.tasks {
-  display: flex;
-  width: 200px;
-  align-items: center;
-  justify-content: space-between;
-}
-.tasks button {
-  margin-left: 20px;
-}

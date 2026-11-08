@@ -1,0 +1,72 @@
+.chat-input {
+  padding: 15px;
+  background-color: rgb(18, 2, 33);
+  border-radius: 5px;
+  border: 1px solid rgb(123, 12, 227);
+  color: white;
+  width: 320px;
+  margin-bottom: 30px;
+}
+/* make the placeholder text white */
+.chat-input::placeholder {
+  color: rgb(224, 221, 221);
+}
+/* make the focus outline green */
+.chat-input:focus {
+  outline: 1px solid rgb(15, 221, 77);
+}
+
+.App {
+  width: 100%;
+  max-width: 1126px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App button {
+  padding: 15px 20px;
+  background-color: rgb(18, 2, 33);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+  background-color: rgb(121, 4, 199);
+  border: none;
+}
+.tasks {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) 100px;
+  width: 400px;
+  align-items: center;
+  background-color: rgb(113, 13, 206);
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+}
+.tasks button {
+  margin-left: 0;
+  background-color: rgb(209, 79, 79);
+  padding: 10px 15px;
+  width: 100%;
+}
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  display: grid;
+  place-content: center;
+  background-color: rgb(18, 2, 33);
+  border-radius: 5px;
+}
+.task-checkbox::before {
+  content: "✓";
+  color: rgb(15, 221, 77);
+  transform: scale(0);
+}
+.task-checkbox:checked::before {
+  transform: scale(1);
+}
